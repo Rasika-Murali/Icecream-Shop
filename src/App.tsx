@@ -14,7 +14,7 @@ import { CartDrawer } from './components/CartDrawer';
 import { CheckoutModal } from './components/CheckoutModal';
 import { Footer } from './components/Footer';
 import { CartItem, StoreLocation, OrderConfirmation } from './types';
-import { STORE_LOCATIONS, FLAVORS_DATA } from './data/mockData';
+import { STORE_LOCATIONS, FLAVORS_DATA, heroImg } from './data/mockData';
 
 export default function App() {
   // Store Selection State
@@ -39,7 +39,7 @@ export default function App() {
           vessel: 'Warm Waffle Cone',
           scoops: ['Wild Marionberry Mascarpone'],
         },
-        image: '/src/assets/images/hero_ice_cream_shop_1791180952681.jpg',
+        image: heroImg,
       },
     ];
   });

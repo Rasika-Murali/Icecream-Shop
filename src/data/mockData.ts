@@ -1,4 +1,11 @@
 import { Flavor, PremadeSundae, VesselOption, ToppingOption, StoreLocation } from '../types';
+import heroImg from '../assets/images/hero_ice_cream_shop_1791180952681.jpg';
+import sundaeImg from '../assets/images/product_gourmet_sundae_1791180967014.jpg';
+import flightImg from '../assets/images/product_cone_flight_1791180978073.jpg';
+import pintsImg from '../assets/images/product_pints_collection_1791180987237.jpg';
+import storeImg from '../assets/images/store_creamery_interior_1791180999108.jpg';
+
+export { heroImg, sundaeImg, flightImg, pintsImg, storeImg };
 
 export const FLAVORS_DATA: Flavor[] = [
   {
@@ -19,7 +26,7 @@ export const FLAVORS_DATA: Flavor[] = [
     isBestseller: true,
     caloriesPerScoop: 240,
     ingredients: ['Grass-fed Cream', 'Organic Milk', 'Mascarpone Cheese', 'Oregon Marionberries', 'Cane Sugar', 'Lemon Juice'],
-    image: '/src/assets/images/product_cone_flight_1791180978073.jpg',
+    image: flightImg,
   },
   {
     id: 'salted-bourbon-honeycomb',
@@ -39,7 +46,7 @@ export const FLAVORS_DATA: Flavor[] = [
     isBestseller: true,
     caloriesPerScoop: 260,
     ingredients: ['Heavy Cream', 'Whole Milk', 'Cane Sugar', 'Kentucky Bourbon', 'Clover Honey', 'Maldon Sea Salt'],
-    image: '/src/assets/images/hero_ice_cream_shop_1791180952681.jpg',
+    image: heroImg,
   },
   {
     id: 'roasted-sicilian-pistachio',
@@ -59,7 +66,7 @@ export const FLAVORS_DATA: Flavor[] = [
     isBestseller: false,
     caloriesPerScoop: 270,
     ingredients: ['Whole Milk', 'Heavy Cream', 'Sicilian Bronte Pistachios', 'Cane Sugar', 'Egg Yolks', 'Sea Salt'],
-    image: '/src/assets/images/product_cone_flight_1791180978073.jpg',
+    image: flightImg,
   },
   {
     id: 'earl-grey-lavender-shortbread',
@@ -79,7 +86,7 @@ export const FLAVORS_DATA: Flavor[] = [
     isSeasonal: true,
     caloriesPerScoop: 250,
     ingredients: ['Organic Milk', 'Cream', 'Bergamot Earl Grey Tea', 'Culinary Lavender', 'Flour', 'Butter', 'Cane Sugar'],
-    image: '/src/assets/images/product_pints_collection_1791180987237.jpg',
+    image: pintsImg,
   },
   {
     id: 'blood-orange-campari-sorbet',
@@ -99,7 +106,7 @@ export const FLAVORS_DATA: Flavor[] = [
     isSeasonal: true,
     caloriesPerScoop: 170,
     ingredients: ['Moro Blood Orange Juice', 'Filtered Water', 'Organic Cane Sugar', 'Grapefruit Zest', 'Pectin'],
-    image: '/src/assets/images/product_cone_flight_1791180978073.jpg',
+    image: flightImg,
   },
   {
     id: 'midnight-chocolate-fudge-vegan',
@@ -119,7 +126,7 @@ export const FLAVORS_DATA: Flavor[] = [
     isBestseller: true,
     caloriesPerScoop: 220,
     ingredients: ['Organic Oat Milk', '72% Single Origin Dark Chocolate', 'Cocoa Butter', 'Cane Sugar', 'Vanilla Extract', 'Sea Salt'],
-    image: '/src/assets/images/hero_ice_cream_shop_1791180952681.jpg',
+    image: heroImg,
   },
   {
     id: 'toasted-black-sesame-vegan',
@@ -138,7 +145,7 @@ export const FLAVORS_DATA: Flavor[] = [
     isNutFree: true,
     caloriesPerScoop: 230,
     ingredients: ['Sprouted Oat Milk', 'Japanese Black Sesame Paste', 'Organic Cane Sugar', 'Sea Salt'],
-    image: '/src/assets/images/product_pints_collection_1791180987237.jpg',
+    image: pintsImg,
   },
   {
     id: 'tahitian-vanilla-bean',
@@ -157,7 +164,7 @@ export const FLAVORS_DATA: Flavor[] = [
     isNutFree: true,
     caloriesPerScoop: 230,
     ingredients: ['Heavy Jersey Cream', 'Whole Milk', 'Tahitian Vanilla Bean Pods', 'Cane Sugar', 'Egg Yolks'],
-    image: '/src/assets/images/product_gourmet_sundae_1791180967014.jpg',
+    image: sundaeImg,
   },
   {
     id: 'cold-brew-brownie-chunk',
@@ -176,7 +183,7 @@ export const FLAVORS_DATA: Flavor[] = [
     isNutFree: true,
     caloriesPerScoop: 275,
     ingredients: ['Whole Milk', 'Heavy Cream', 'Cold Brew Coffee', 'Valrhona Cocoa', 'Flour', 'Butter', 'Cane Sugar'],
-    image: '/src/assets/images/product_gourmet_sundae_1791180967014.jpg',
+    image: sundaeImg,
   },
 ];
 
@@ -191,7 +198,7 @@ export const PREMADE_SUNDAES: PremadeSundae[] = [
     scoops: ['Salted Bourbon & Honeycomb', 'Midnight Chocolate Fudge Oat [V]'],
     sauces: ['Hot Dark Chocolate Fudge'],
     toppings: ['Torched Marshmallow Fluff', 'Honey Graham Dust', 'Smoked Sea Salt'],
-    image: '/src/assets/images/product_gourmet_sundae_1791180967014.jpg',
+    image: sundaeImg,
   },
   {
     id: 'berry-brioche-split',
@@ -203,7 +210,7 @@ export const PREMADE_SUNDAES: PremadeSundae[] = [
     scoops: ['Wild Marionberry Mascarpone', 'Tahitian Pure Vanilla Bean'],
     sauces: ['Wild Blackberry Coulis'],
     toppings: ['Toasted Marcona Almonds', 'Vanilla Powder'],
-    image: '/src/assets/images/product_cone_flight_1791180978073.jpg',
+    image: flightImg,
   },
   {
     id: 'pistachio-caramel-parfait',
@@ -215,7 +222,7 @@ export const PREMADE_SUNDAES: PremadeSundae[] = [
     scoops: ['Roasted Sicilian Pistachio', 'Tahitian Pure Vanilla Bean'],
     sauces: ['Warm Salted Bourbon Caramel'],
     toppings: ['Crushed Pistachio Brittle', 'Pasture Whipped Cream', 'Bordeaux Cherry'],
-    image: '/src/assets/images/product_gourmet_sundae_1791180967014.jpg',
+    image: sundaeImg,
   },
 ];
 
@@ -311,7 +318,7 @@ export const STORE_LOCATIONS: StoreLocation[] = [
     hasTastingFlight: true,
     hasCurbsidePickup: true,
     isFlagship: true,
-    image: '/src/assets/images/store_creamery_interior_1791180999108.jpg',
+    image: storeImg,
   },
   {
     id: 'waterfront-pier',
@@ -339,7 +346,7 @@ export const STORE_LOCATIONS: StoreLocation[] = [
     hasTastingFlight: false,
     hasCurbsidePickup: true,
     isFlagship: false,
-    image: '/src/assets/images/store_creamery_interior_1791180999108.jpg',
+    image: storeImg,
   },
   {
     id: 'mission-courtyard',
@@ -367,7 +374,7 @@ export const STORE_LOCATIONS: StoreLocation[] = [
     hasTastingFlight: true,
     hasCurbsidePickup: true,
     isFlagship: false,
-    image: '/src/assets/images/store_creamery_interior_1791180999108.jpg',
+    image: storeImg,
   },
   {
     id: 'presidio-haven',
@@ -395,6 +402,6 @@ export const STORE_LOCATIONS: StoreLocation[] = [
     hasTastingFlight: false,
     hasCurbsidePickup: true,
     isFlagship: false,
-    image: '/src/assets/images/store_creamery_interior_1791180999108.jpg',
+    image: storeImg,
   },
 ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles, Clock, Compass } from 'lucide-react';
 import { StoreLocation } from '../types';
+import { heroImg } from '../data/mockData';
 
 interface HeroProps {
   onExploreMenu: () => void;
@@ -91,7 +92,7 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl bg-stone-100 border border-stone-200 aspect-[16/10] sm:aspect-[16/11]">
               <img
-                src="/src/assets/images/hero_ice_cream_shop_1791180952681.jpg"
+                src={heroImg}
                 alt="Artisanal ice cream scoops on warm waffle cone with berries and caramel"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

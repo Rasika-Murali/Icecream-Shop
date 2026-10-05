@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, Check, Plus, RefreshCw, ShoppingBag } from 'lucide-react';
 import { VesselOption, Flavor, ToppingOption, CartItem } from '../types';
-import { FLAVORS_DATA, VESSEL_OPTIONS, TOPPING_OPTIONS } from '../data/mockData';
+import { FLAVORS_DATA, VESSEL_OPTIONS, TOPPING_OPTIONS, heroImg } from '../data/mockData';
 
 interface ScoopBuilderProps {
   onAddToCart: (item: CartItem) => void;
@@ -89,7 +89,7 @@ export const ScoopBuilder: React.FC<ScoopBuilderProps> = ({ onAddToCart }) => {
         toppings: selectedToppingNames,
         notes: customNotes.trim() || undefined,
       },
-      image: activeScoops[0]?.image || '/src/assets/images/hero_ice_cream_shop_1791180952681.jpg',
+      image: activeScoops[0]?.image || heroImg,
     };
 
     onAddToCart(cartItem);
