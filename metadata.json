@@ -1,0 +1,6 @@
+{
+  "name": "Velvet & Swirl Artisanal Creamery",
+  "description": "Handcrafted small-batch ice cream with farm-fresh dairy and plant-based scoops, interactive scoop & sundae builder, online ordering, and scoop shop locator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
